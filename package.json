@@ -1,0 +1,24 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "click to eat a delicious burger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegetoutgirl/burger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thegetoutgirl/burger/issues"
+  },
+  "homepage": "https://github.com/thegetoutgirl/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
+    "mysql": "^2.18.1"
+  }
+}
