@@ -8,7 +8,7 @@ $(function() {
     // var done = $(this).data("devoured");
 
     var newBurger = {
-      burger_name: $("#thisBurger").val().trim(),
+      name: $("#thisBurger").val().trim(),
       devoured: 0
     };
 
