@@ -1,14 +1,14 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
 // POST REQUEST TO CREATE A NEW BURGER
-  $(".create-form").on("click", function(event) {
+  $(".create-form").on("submit", function(event) {
     event.preventDefault();
 
     // var id = $(this).data("id");
     // var done = $(this).data("devoured");
 
     var newBurger = {
-      burger_name: $("#newburger").val().trim(),
+      burger_name: $("#thisBurger").val().trim(),
       devoured: 0
     };
 
@@ -17,8 +17,7 @@ $(function() {
       data: newBurger
     }).then(
       function() {
-        console.log("Added " + data + " to the menu");
-        // Reload the page to get the updated list
+        console.log("Added to the menu!");
         location.reload();
       }
     );
